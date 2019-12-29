@@ -115,4 +115,12 @@ public class Product {
     public int hashCode() {
         return Objects.hash(price, discountedPrice, name, amountAvailable, hasDiscount, expirationDate, active);
     }
+
+    public Product(Double price, String name) {
+        this.price = price;
+        this.name = name;
+    }
+
+    public Product() {
+    }
 }
